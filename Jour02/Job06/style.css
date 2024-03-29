@@ -1,0 +1,9 @@
+/* Préparation du style Konami */
+.konami {
+  background-color: #0f0; /* Un vert lumineux pour symboliser la réussite */
+  color: #fff; /* Contraste élevé pour la lisibilité */
+  text-align: center;
+  padding: 50px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
