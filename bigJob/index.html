@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'Geist';
+      src: url('assets/variable-woff/GeistVF.woff') format('woff');
+    }
+    </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yelloww: '#EBF400',
+            pinkk: '#F72798',
+            redd: '#981616'
+          },
+          fontFamily: {
+            'h1': ['Geist', 'sans-serif'],
+            'label': ['Geist', 'mono'],
+          },
+        }
+      }
+    }
+  </script>
+  <title>Document</title>
+</head>
+<body class="bg-yelloww">
+  <main class="">
+    <h1 class="font-h1 text-5xl md:text-6xl xl:text-9xl sm:text-5xl text-center font-bold mt-10">Inscription</h1>
+    <form class="flex flex-col sm:w-5/5 md:w-4-5 xl:w-3/5 border- border-black-500 mx-auto items-center mt-20">
+      <div class="flex flex-col xl:w-2/5 w-3/5 md:w-4/5 lg:w-4/5 px-auto">
+        <label for="nom" class="font-label font-bold text-lg">Nom:</label>
+        <input type="text" id="nom" name="nom"class="border-4 border-black min-h-10 bg-pinkk" ><br><br>
+        <p id="nom-alert" class="hidden text-right font-label font-bold text-base	mb-4 text-redd">La taille de votre nom est trop petit</p>
+      </div>
+      <div class="flex flex-col xl:w-2/5 w-3/5 md:w-4/5 lg:w-4/5 px-auto">
+        <label for="prenom" class="font-label font-bold text-lg">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" class="border-4 border-black min-h-10 bg-pinkk" ><br><br>
+        <p id="prenom-alert" class="hidden text-right font-label font-bold text-base mb-4 text-redd">La taille de votre prenom est trop petit</p>
+      </div>
+      <div class="flex flex-col xl:w-2/5 w-3/5 md:w-4/5 lg:w-4/5 px-auto">
+        <label for="code-postal" class="font-label font-bold text-lg">Code postal:</label>
+        <input type="text" id="code-postal" name="code-postal" class="border-4 border-black min-h-10 bg-pinkk " ><br><br>
+        <p id="code-postal-alert" class="hidden text-right font-label font-bold text-base mb-4 text-redd">Code postal invalide</p>
+      </div>
+      <div class="flex flex-col xl:w-2/5 w-3/5 md:w-4/5 lg:w-4/5 px-auto">
+        <label for="email" class="font-label font-bold text-lg">Email:</label>
+        <input type="email" id="email" name="email" class="border-4 border-black min-h-10 bg-pinkk" ><br><br>
+        <p id="email-alert" class="hidden text-right font-label font-bold text-base	mb-4 text-redd">Adresse email invalide</p>
+      </div>
+      <div class="flex flex-col xl:w-2/5 w-3/5 md:w-4/5 lg:w-4/5 px-auto">
+        <label for="password" class="font-label font-bold text-lg">Mot de passe:</label>
+        <input type="password" id="password" name="password" class="border-4 border-black min-h-10 bg-pinkk " ><br><br>
+        <p id="password-alert" class="hidden text-right font-label font-bold text-base mb-4 text-redd">Le mot de passe doit contenir au moins 8 caractères, 1 lettre, 1 chiffre et 1 caractère spécial.</p>
+      </div>
+    </form>
+    <section class="flex flex-col items-center border-black min-h-20">
+      <button id="button" class="font-label text-2xl font-bold underline">S'inscrire</button>
+      <a href="connection.html" class="font-label text-sm mt-auto ml-auto lg:mr-6 mr-2">
+        <button id="button" >Déja inscrit ? Se connecter</button>
+      </a>
+    </section>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+</html>

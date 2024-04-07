@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>  
+  <title>Document</title>
+</head>
+<body>
+  <form id="requestForm">
+    <label for="eventDate">Date de l'événement:</label><br>
+    <input type="date" id="eventDate" name="eventDate"><br>
+    <input type="submit" id="submitButton" value="Envoyer la demande">
+  </form>
+  <p id="errorMessage" style="color:red;"></p>
+  
+  <script>
+    var dates = {}; // Créer un objet JSON vide
+  
+    // Initialiser le sélecteur de date avec flatpickr
+    flatpickr("#eventDate", {
+      onReady: function(dateObj, dateStr, instance) {
+        // Mettre en surbrillance les dates dans l'objet JSON
+        var $cal = $(instance.calendarContainer);
+        Object.keys(dates).forEach(function(date) {
+          if (dates[date]) {
+            $cal.find('.flatpickr-day[data-date="' + date + '"]').addClass('highlight');
+          }
+        });
+      }
+    });
+  
+    document.getElementById('requestForm').addEventListener('submit', function(event) {
+      // ...
+    });
+  </script>
+  
+  <!-- Ajouter du CSS pour la classe highlight -->
+  <style>
+    .highlight {
+      background-color: orange !important;
+    }
+  </style>
+</body>
+</html>

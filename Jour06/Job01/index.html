@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color: #dcdcdc;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">LPTF</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://laplateforme.io/">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Units</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </nav>
+  </header>
+  <section id="title" class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h1 class="text-primary text-center">LaPlateforme_</h1>
+      </div>
+    </div>
+  </section>
+  <section class="container mx-auto">
+    <section class="row justify-content-center ">
+      <section class="col-12 col-md-6 col-lg-3 bg-white">
+        <img src="papillon.jpeg" class="img-fluid">
+        <h2>Un Papillon</h2>
+        <h6>Un papillon, c'est comme peu comme une chenille, mais avec des ailes.</h6>
+        <h6>Ne pas ingérer</h6>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Commandez votre propre papillon</button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmation d'achat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Êtes-vous sûr de vouloir procéder à l'achat de ce papillon ?</h6>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmer l'achat</button>
+                <button type="button" class="btn btn-secondary">Annuler</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-12 col-md-6 col-lg-7" style="background-color: #e9ecef;">
+        <div class="jumbotron">
+          <h1 id="jumbo-title" class="display-4">Bonjour, monde!</h1>
+          <p class="lead" id="lead-1">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p class="lead" id="lead-2">Le sens le plus courant désigne notre planète, la Terre, avec ses habitants, et son environnement plus ou moins naturel.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <button type="button" id="reboot-button" class="btn btn-danger">Rebooter le Monde</button>
+          <div class="spinner-border text-info" role="status" id="spinner">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+
+
+          <section class="d-flex justify-content-end">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </section>
+      <!-- <div class="col-1"></div> -->
+      <section class="col-12 col-md-6 col-lg-2" >
+        <section class="row justify-content-center">
+          <ul>
+            <li class="list-group-item">Limbes</li>
+            <li class="list-group-item">Luxure</li>
+            <li class="list-group-item">Gourmandise</li>
+            <li class="list-group-item">Avarice</li>
+            <li class="list-group-item">Colère</li>
+            <li class="list-group-item">Heresie</li>
+            <li class="list-group-item">Violence</li>
+            <li class="list-group-item">Ruse et Tromperie</li>
+            <li class="list-group-item">Trahison</li>
+            <li class="list-group-item">Internet</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <section class="container ">
+    <div class="row justify-content-center pt-4">
+      <div class="col-6 text-end">
+        <h6>Installation de AI 9000</h6>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-4 ">
+      <div class="col-12 col-md-9 col-lg-5 ">
+        <h5>Recevez votre copie gratuite d'internet 2!</h5>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">DogeCoin</span>
+          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-text">.00</span>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">https://l333t.fFUH/DAZ/DAZ</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-2"></div> 
+
+      <div class="col-12 col-md-7 col-lg-3">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1">
+          <h7>We will never share you're email with anyone else</h7>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Password</label>
+          <input type="pass" class="form-control" id="exampleFormControlInput2" >
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Check me out
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
